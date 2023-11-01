@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     // Axios GET request to fetch meal data from the server
     axios
-      .get("/meals")
+      .get("http://localhost:3000/meals")
       .then((response) => {
         setMeals(response.data);
       })
